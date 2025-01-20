@@ -1,11 +1,5 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Магазин</title>
-        <script src="script.js" defer></script>
-    </head>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -167,7 +161,8 @@
             top: 20px;
             right: 20px;
             padding: 10px 15px;
-            background-color: #4CAF50;
+            background-color:
+            #4CAF50;
             color: white;
             border-radius: 50%;
             font-size: 1.5em;
@@ -206,7 +201,7 @@
             <div class="carousel-item">📍 Открытие новой точки! Ждем вас по новому адресу!</div>
             <div class="carousel-item">📍 Новая коллекция ароматов</div>
             <div class="carousel-item">📍 Скидки на популярные модели</div>
-            <div class="carousel-item">Обновление законодательства: "Будьте в курсе! </div>
+            <div class="carousel-item">Обновление законодательства: "Будьте в курсе!"</div>
         </div>
         <button class="carousel-button prev" onclick="moveCarousel(-1)">❮</button>
         <button class="carousel-button next" onclick="moveCarousel(1)">❯</button>
@@ -216,22 +211,24 @@
         <a href="{{ url_for('liquids') }}">
             <div class="category">
                 <img src="{{ url_for('static', filename='liquid-icon.png') }}" alt="Жидкости">
-                <div>Жидкости</div>
+                <div class="category-text">Жидкости</div>
             </div>
         </a>
         
         <a href="{{ url_for('devices') }}">
             <div class="category">
                 <img src="{{ url_for('static', filename='device-icon.png') }}" alt="Устройства">
-                <div>Устройства</div>
+                <div class="category-text">Устройства</div>
             </div>
         </a>
+        
         <div class="category">
             <a href="snus.html" target="_blank">
                 <img src="snus-icon.png" alt="Снюс">
                 <div class="category-text">Снюс</div>
             </a>
         </div>
+        
         <div class="category">
             <a href="accessories.html" target="_blank">
                 <img src="accessories-icon.png" alt="Расходники">
